@@ -1,0 +1,8 @@
+.portafolio {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.portafolio:last-child {
+    border-bottom: 0;
+}

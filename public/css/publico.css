@@ -1,0 +1,73 @@
+.banner {
+    background-color: #d7d7d7;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.navbar-transparente {
+    background: transparent;
+    box-shadow: none;
+}
+
+.buscador {
+    background: #fff;
+    border-radius: 5px;
+}
+
+.search-control {
+    display: block;
+    width: 100%;
+    padding: .5625rem 2.25rem .5625rem .75rem;
+    appearance: none;
+    border: 0;
+    box-shadow: none;
+    outline: none;
+}
+
+.search-select {
+    display: block;
+    width: 100%;
+    padding: .5625rem 2.25rem .5625rem .75rem;
+    appearance: none;
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    --tblr-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23929dab' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    background-image: var(--tblr-form-select-bg-img),var(--tblr-form-select-bg-icon,none);
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;    
+}
+
+.search-section {
+    border-left: 1px solid #dfdfdf;
+}
+
+.search-section:first-child {
+    border-left: 0;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) 
+{
+    .search-section {
+        border-left: 0;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+
+}

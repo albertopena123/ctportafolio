@@ -1,0 +1,261 @@
+.movil
+{
+    display: none;
+}
+
+.oculto {
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    opacity: 0;    
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.mayuscula 
+{
+    text-transform: uppercase;
+}
+
+.cargando
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ffffffd1;
+    z-index: 1;
+}
+
+
+/*---------------FORMS-*/
+.mayuscula 
+{
+    text-transform: uppercase;
+}
+
+.form-required .form-label::after{
+    content: ' *';
+    display: inline;
+    color: red;
+}
+
+.form-false-required .form-label::after{
+    content: ' *';
+    display: inline;
+    color: red;
+}
+
+.invalid-feedback
+{
+    display: block;
+}
+
+.input-group:has(.is-invalid) > .input-group-text {
+    border-color: red;
+}
+
+.month-item-name {
+    text-transform: capitalize;
+}
+
+.form-control:read-only {
+    background-color: #f1f5f9;
+    opacity: 1;
+}
+
+/*--------------------DATATABBLES*/
+.bg_header {
+    background-color: #f8fafc;
+}
+
+.datatables_header {
+    background-color: #f8fafc;
+}
+
+.dataTables_filter
+{
+    white-space: nowrap;
+}
+
+.table-responsive
+{
+    margin-bottom: 0;
+    position: relative;
+}
+
+.table-responsive.fix_dropdown {
+    overflow: auto;
+}
+
+.dataTables_paginate > .pagination
+{
+    margin-bottom: 0;
+}
+
+.dataTables_processing
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffffc9;
+    z-index: 1;
+    border: 0 !important;
+    border-radius: 0 !important;
+}
+
+.dataTables_paginate  .page-item.active .page-link
+{
+    z-index: 1;
+}
+
+.icono_estado svg{
+    width: 24px;
+    height: 24px;
+}
+
+.icono_big svg{
+    width: 112px;
+    height: 112px;
+}
+
+.bg-interno{
+    /*background: #fff9b1;*/    
+    box-shadow: 3px 0px 0px 0px #f59f00 inset;
+    -webkit-box-shadow: 3px 0px 0px 0px #f59f00 inset;
+    -moz-box-shadow: 3px 0px 0px 0px #f59f00 inset;    
+}
+
+.w-40
+{
+    width: 40%;
+}
+
+.select_label_container{
+    position: relative;
+}
+
+.select_label_min{
+    display: none;
+    position: absolute;
+    font-size: 9px;
+    padding: 3px 8px;
+    background: #d9dbde;
+    top: -7px;
+    border-radius: 3px;
+    left: 15px;
+    line-height: 1;
+    z-index: 1;
+}
+
+.select_label_container:hover > .select_label_min{
+    display: block;
+}
+
+.sorting_desc, .sorting_asc {
+    position: relative;
+}
+
+.sorting_desc::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #646464;
+    right: 0;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.sorting_asc::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid #646464;
+    right: 0;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+#mensaje_container
+{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    /*left: 25px;*/
+    z-index: 1097;
+}
+
+.pagina-centro .container {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.table-min {
+    margin: 0;
+}
+
+.table-min > thead > tr > th, .table-min > tbody > tr > td {
+    padding: .35rem .55rem;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.gb-grey {
+    background-color: #f9f9f9;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) 
+{
+    .movil
+    {
+        display: inherit;
+    }
+
+    .escritorio, .dataTables_length
+    {
+        display: none;
+    }
+
+    .table-responsive.fix_dropdown {
+        overflow: inherit;
+    }
+
+    .dataTables_filter .escritorio {
+        display: inline-flex !important;
+    }
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+
+}

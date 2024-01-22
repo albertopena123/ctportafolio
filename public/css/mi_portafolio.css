@@ -1,0 +1,105 @@
+.header-button {
+    margin: -.5rem ;
+}
+
+.carpeta_color {
+    color: #febb36;
+}
+
+.gris_color {
+    background: #f1f1f1;
+}
+
+.elemento {
+    display: block;
+    padding: .5rem;
+    border-radius: 5px;
+    color: #444444;
+}
+
+.elemento.activo {
+    background: #e9efff !important;
+    color: #304eca !important;
+}
+
+.elemento:hover {
+    background: #f1f1f1;
+    text-decoration: none;
+}
+
+.sub_seccion {
+    padding-left: 15px;
+}
+
+.seccion {
+    padding-left: 15px;
+    position: relative;
+}
+
+.seccion::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border: 1px dashed #c3c3c3;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.seccion:last-child::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border: 1px dashed #c3c3c3;
+    height: 20px;
+    top: 0;
+    left: 0;
+}
+
+.seccion::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border: 1px dashed #c3c3c3;
+    width: 15px;
+    top: 18px;
+    left: 0;
+}
+
+.oculto {
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    opacity: 0;    
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+
+.lista_mover {
+    padding-left: 20px;
+}
+
+.item_mover {
+    list-style: circle;
+}
+
+.accion_mover {
+    border: 1px solid #cfcfcf;
+    display: block;
+    padding: 5px 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 5px;
+    background-color: #f1f1f1;
+}
+
+.accion_mover:hover {
+    background: #d9ddeb;
+    text-decoration: none;
+}
+
+.inactivo_mover {
+    opacity: 0.5;
+}
